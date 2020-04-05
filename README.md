@@ -1,5 +1,8 @@
 # mb'Lifter 
 
+![pcb image](IMG_3603.png "Logo Title Text 1")
+![pcb image](IMG_0307.png "Logo Title Text 1")
+
 ## What is it
 
 It's a amplifier and attenuator, both coupled and controlled by one knob.
