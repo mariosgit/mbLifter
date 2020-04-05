@@ -21,7 +21,7 @@ It has 2 channels doing this.
 
 Clip indicator - lights up when one of the channels opamps runs into clipping, that is signal level above +-10V peak to peak.
 
-Other features Reverse voltage protection, requires +-12V and needs +-25mA.
+Other features Reverse voltage protection, requires +-12V and needs +-25mA. Width = 5HP = 25mm = almost 1".
 
 ### But Why ?
 
