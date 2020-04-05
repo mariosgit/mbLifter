@@ -1,5 +1,6 @@
 # mb'Lifter 
 
+![pcb image](rendering.png "Logo Title Text 1")
 ![pcb image](IMG_3603.png "Logo Title Text 1")
 ![pcb image](IMG_0307.png "Logo Title Text 1")
 
