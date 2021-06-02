@@ -1,6 +1,6 @@
 * SpiceNetList
 * 
-* Exported from opamp1.sch at 6/2/2021 6:06 PM
+* Exported from opamp1.sch at 6/2/2021 6:16 PM
 * 
 * EAGLE Version 9.5.2 Copyright (c) 1988-2019 Autodesk, Inc.
 * 
@@ -9,13 +9,16 @@
 * --------- .PARAMS ---------
 
 * --------- devices ---------
+D_D1 VDIST1 0 DMOD 
+V_VSUPPLY1 VSS 0 -3V 
+V_VSRC VIN 0 DC 0V AC 1 SIN(0 150mV 1khz 0.1ms 0) 
+R_R3 VOUT1 VDIST1 100 
+R_R2 VIN N_1 2.7k 
+X_X1 0 N_1 VDD VSS VOUT1 OPAMP 
+C_C3 N_1 VOUT1 100p 
 R_R1 N_1 VOUT1 22.7k 
 V_VSUPPLY VDD 0 3V 
-X_X1 0 N_1 VDD VSS VOUT1 OPAMP 
-V_VSUPPLY1 VSS 0 -3V 
-R_R2 VIN N_1 2.7k 
-V_VSRC VIN 0 DC 0V AC 1 SIN(0 150mV 1khz 0.1ms 0) 
-C_C3 N_1 VOUT1 100p 
+D_D3 0 VDIST1 DMOD 
 
 * --------- models ---------
 
@@ -52,10 +55,20 @@ ROUT 80 vout 100
 .ENDS opamp
 
 
+* (model found in library)
+
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic diode intrinsic model
+**********************
+.MODEL DMOD D
+
+
 * --------- simulation ---------
-.print DC V(VIN) V(VOUT1) I(V_VSUPPLY1) I(V_VSRC) I(V_VSUPPLY)
-.print AC V(VIN) V(VOUT1) I(V_VSUPPLY1) I(V_VSRC) I(V_VSUPPLY)
-.print TRAN V(VIN) V(VOUT1) I(V_VSUPPLY1) I(V_VSRC) I(V_VSUPPLY)
+.print DC V(VIN) V(VOUT1) V(VDIST1) I(V_VSUPPLY) I(V_VSUPPLY1) I(V_VSRC)
+.print AC V(VIN) V(VOUT1) V(VDIST1) I(V_VSUPPLY) I(V_VSUPPLY1) I(V_VSRC)
+.print TRAN V(VIN) V(VOUT1) V(VDIST1) I(V_VSUPPLY) I(V_VSUPPLY1) I(V_VSRC)
 .END
 
 

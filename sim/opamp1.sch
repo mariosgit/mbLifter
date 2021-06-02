@@ -970,6 +970,143 @@ EXXXXXXX N+ N- NC+ NC- VALUE
 </deviceset>
 </devicesets>
 </library>
+<library name="ngspice-simulation" urn="urn:adsk.eagle:library:527439">
+<description>SPICE compatible library parts</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="R" urn="urn:adsk.eagle:symbol:527454/4" library_version="18">
+<description>RESISTOR</description>
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="97">&gt;SPICEMODEL</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="-8.89" size="1.778" layer="97">&gt;SPICEEXTRA</text>
+</symbol>
+<symbol name="DIODE" urn="urn:adsk.eagle:symbol:527450/4" library_version="18">
+<description>Diode</description>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-5.08" y="-5.08" size="1.778" layer="97">&gt;SPICEMODEL</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="97">&gt;SPICEEXTRA</text>
+<text x="-5.08" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LED" urn="urn:adsk.eagle:symbol:527457/4" library_version="18">
+<description>Light-Emitting Diode (LED)</description>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="97">&gt;SPICEMODEL</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="97">&gt;SPICEEXTRA</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.556" x2="-1.27" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="6.35" x2="-0.508" y2="4.826" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="4.826" x2="0.762" y2="7.874" width="0.254" layer="94"/>
+<wire x1="0.762" y1="7.874" x2="1.016" y2="6.604" width="0.254" layer="94"/>
+<wire x1="1.016" y1="6.604" x2="-0.254" y2="7.366" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="7.366" x2="0.762" y2="7.874" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="2.286" x2="1.016" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.016" y1="5.08" x2="1.778" y2="3.556" width="0.254" layer="94"/>
+<wire x1="1.778" y1="3.556" x2="3.048" y2="6.604" width="0.254" layer="94"/>
+<wire x1="3.048" y1="6.604" x2="3.302" y2="5.334" width="0.254" layer="94"/>
+<wire x1="3.302" y1="5.334" x2="2.032" y2="6.096" width="0.254" layer="94"/>
+<wire x1="2.032" y1="6.096" x2="3.048" y2="6.604" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="R" urn="urn:adsk.eagle:component:527474/6" prefix="R" uservalue="yes" library_version="18">
+<description>RESISTOR</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</deviceset>
+<deviceset name="DIODE" urn="urn:adsk.eagle:component:527471/11" prefix="D" library_version="18">
+<description>Diode</description>
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="D">
+<pinmap gate="G$1" pin="A" pinorder="1"/>
+<pinmap gate="G$1" pin="C" pinorder="2"/>
+</pinmapping>
+<model name="DMOD">
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic diode intrinsic model
+**********************
+.MODEL DMOD D</model>
+</spice>
+</deviceset>
+<deviceset name="LED" urn="urn:adsk.eagle:component:527477/11" prefix="D" library_version="18">
+<description>Diode</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="D">
+<pinmap gate="G$1" pin="A" pinorder="1"/>
+<pinmap gate="G$1" pin="C" pinorder="2"/>
+</pinmapping>
+<model name="DMOD">
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic diode intrinsic model
+**********************
+.MODEL DMOD D</model>
+</spice>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -991,6 +1128,10 @@ EXXXXXXX N+ N- NC+ NC- VALUE
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:5272020" deviceset="GND" device=""/>
 <part name="X1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:5272020" deviceset="OPAMP" device=""/>
 <part name="C3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:5272020" deviceset="C" device="" value="100p"/>
+<part name="R3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="100"/>
+<part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:5272020" deviceset="GND" device=""/>
+<part name="D3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="DIODE" device=""/>
+<part name="D1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="LED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1037,6 +1178,19 @@ and 10kHz Active LPF opamp circuit using macro model</text>
 <instance part="C3" gate="G$1" x="144.78" y="147.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="142.24" y="149.86" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="144.78" y="149.86" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R3" gate="G$1" x="187.96" y="111.76" smashed="yes">
+<attribute name="NAME" x="185.42" y="114.3" size="1.778" layer="95"/>
+<attribute name="VALUE" x="185.42" y="107.95" size="1.778" layer="96"/>
+</instance>
+<instance part="X_4" gate="G$1" x="200.66" y="88.9" smashed="yes"/>
+<instance part="D3" gate="G$1" x="195.58" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="191.77" y="93.98" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="205.74" y="93.98" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D1" gate="G$1" x="205.74" y="99.06" smashed="yes" rot="R270">
+<attribute name="NAME" x="200.66" y="104.14" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="193.04" y="104.14" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -1088,7 +1242,7 @@ and 10kHz Active LPF opamp circuit using macro model</text>
 <wire x1="157.48" y1="142.24" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="111.76" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
 <label x="162.56" y="111.76" size="1.778" layer="95"/>
-<wire x1="157.48" y1="111.76" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
 <junction x="157.48" y="111.76"/>
 <pinref part="X1" gate="G$1" pin="VOUT"/>
 <probe x="162.56" y="101.6" size="1.778" layer="89" probetype="0"/>
@@ -1096,6 +1250,7 @@ and 10kHz Active LPF opamp circuit using macro model</text>
 <wire x1="157.48" y1="142.24" x2="157.48" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="147.32" x2="149.86" y2="147.32" width="0.1524" layer="91"/>
 <junction x="157.48" y="142.24"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="0" class="0">
@@ -1120,6 +1275,15 @@ and 10kHz Active LPF opamp circuit using macro model</text>
 <wire x1="109.22" y1="106.68" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="P"/>
 </segment>
+<segment>
+<wire x1="195.58" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="X_4" gate="G$1" pin="0"/>
+<wire x1="200.66" y1="93.98" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="93.98" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
+<junction x="200.66" y="93.98"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+</segment>
 </net>
 <net name="VSS" class="0">
 <segment>
@@ -1132,6 +1296,20 @@ and 10kHz Active LPF opamp circuit using macro model</text>
 <wire x1="132.08" y1="132.08" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <label x="134.62" y="132.08" size="1.778" layer="95"/>
 <pinref part="X1" gate="G$1" pin="VSS"/>
+</segment>
+</net>
+<net name="VDIST1" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="111.76" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="111.76" x2="200.66" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
+<junction x="200.66" y="104.14"/>
+<probe x="208.28" y="114.3" size="1.778" layer="89" probetype="0"/>
+<label x="213.36" y="109.22" size="1.778" layer="95"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>

@@ -5,9 +5,9 @@
         "ac sweep type": "Dec"
     },
     "dc parameters": {
-        "dc end value": "",
-        "dc source": "V_VSUPPLY2",
-        "dc start value": ""
+        "dc end value": "-.5",
+        "dc source": "V_VSRC",
+        "dc start value": ".5"
     },
     "settings": {
         "abstol": "1e-12",
@@ -27,7 +27,7 @@
         "trtol": "7",
         "vntol": "1e-6"
     },
-    "simulation type": "AC",
+    "simulation type": "DC",
     "temperature": 25,
     "tran parameters": {
         "tran start value": "1ms",

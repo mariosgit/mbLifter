@@ -4,7 +4,7 @@ Circuit: * spicenetlist
 Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
 
 
-No. of Data Rows : 7001
+No. of Data Rows : 1001
 ASCII raw file
 
 Note: No ".plot", ".print", or ".fourier" lines; no simulations run
