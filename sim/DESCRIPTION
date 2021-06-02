@@ -1,0 +1,8 @@
+<language en>
+<b>Simulation example: opamp</b>
+<p>
+This example uses subcircuit opamp models to make a voltage amplifier
+and a low pass filter.  It is setup for an AC Analysis of the filter
+response.
+
+</language>
